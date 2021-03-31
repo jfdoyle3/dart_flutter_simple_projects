@@ -1,7 +1,23 @@
+
+
 import 'package:flutter/material.dart';
 
 void main(){
-  runApp(Text("Welcome to Flutter!!",
-    textDirection: TextDirection.ltr,
-  ));
+  runApp(MyApp());
+}
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context){
+    return MaterialApp(
+      title: "Flutter App",
+      home: Home(),
+    );
+  }
+}
+
+class Home extends StatelessWidget{
+  @override
+  Widget build(BuildContext context){
+    return Scaffold();
+  }
 }
