@@ -1,13 +1,12 @@
-
-
 import 'package:flutter/material.dart';
 
-void main(){
+void main() {
   runApp(MyApp());
 }
+
 class MyApp extends StatelessWidget {
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return MaterialApp(
       title: "Flutter App",
       home: Home(),
@@ -15,15 +14,15 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class Home extends StatelessWidget{
+class Home extends StatelessWidget {
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: Colors.black,
-          title: Text("Resistance is futile!!!"),
-          centerTitle: true,
-        ),
+        backgroundColor: Colors.blueGrey,
+        title: Text("Resistance is futile!!!"),
+        centerTitle: true,
+      ),
     );
   }
 }
