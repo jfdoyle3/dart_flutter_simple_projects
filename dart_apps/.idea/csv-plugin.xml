@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\com.example.apps\notebook_Basic_Code.dart">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>

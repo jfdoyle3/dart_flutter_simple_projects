@@ -2,14 +2,9 @@
 
 
 
-
-
-
 class Person{
   String name='Jim';
   int age=40;
-
-
 }
 
 double addNumbers(double num1, double num2){
@@ -23,8 +18,11 @@ void main(){
 }
 
 void personObject(){
-  var person=Person();
-  print(person.name);
+  var personOne=Person();
+  var personTwo=Person();
+  personTwo.name="Joe";
+  print(personTwo.name);
+  print(personOne.name);
 }
 
 void numberPlay(){
