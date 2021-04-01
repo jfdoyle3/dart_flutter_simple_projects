@@ -21,7 +21,7 @@ class Home extends StatelessWidget{
     return Scaffold(
       appBar: AppBar(
           backgroundColor: Colors.black,
-          title: Text("This is a Flutter App."),
+          title: Text("Resistance is futile!!!"),
           centerTitle: true,
         ),
     );
