@@ -1,10 +1,13 @@
 
 
-
-
 class Person{
-  String name='Jim';
-  int age=40;
+  String? name;
+  int? age;
+
+  Person(this.name, this.age);
+  // Set a default value in constructor:
+  Person.option({required this.name, this.age=0});
+
 }
 
 double addNumbers(double num1, double num2){
@@ -13,16 +16,15 @@ double addNumbers(double num1, double num2){
 
 void main(){
   // numberPlay();
- personObject();
+  personObject();
   print('end of line...');
 }
 
 void personObject(){
-  var personOne=Person();
-  var personTwo=Person();
-  personTwo.name="Joe";
-  print(personTwo.name);
-  print(personOne.name);
+  var personOne=Person('Jim',34);
+  var personTwo=Person.option(name: 'joe'); // order of constructor variables is not necessary.
+  print('2: ${personTwo.name}  age: ${personTwo.age}');
+  print('1: ${personOne.name}  age: ${personOne.age}');
 }
 
 void numberPlay(){
